@@ -23,16 +23,3 @@ function Calculate(){
     
 }
 
-const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/642");
-const buttons = document.querySelectorAll("button");
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    audio.play();
-  }
-  );
-
-  button.addEventListener('mouseout',() => {
-    audio.stop();
-
-})});
